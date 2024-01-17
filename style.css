@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Set a maximum width for the container */
+    max-width: 1300px; /* Set a maximum width for the container */
     margin: 0 auto; /* Center the container */
 }
 
@@ -54,10 +54,11 @@ h2, h3 {
     white-space: nowrap;
     scrollbar-width: thin;
     scrollbar-color: #dee2e6 #ffffff;
-    margin: 0 -20px;
+    margin: 0;
     padding: 0 20px;
     position: relative;
     z-index: 1;
+    word-break: break-word;
 }
 
 .project-container::-webkit-scrollbar {
@@ -68,26 +69,26 @@ h2, h3 {
     background-color: #dee2e6;
 }
 
-.projects-scroll-container {
+ .projects-scroll-container {
     overflow: auto;
     max-width: 100%; /* Adjust as needed */
     height: 100vh; /* Adjust as needed */
     margin: 0 auto;
     padding: 0 20px; /* Adjust as needed */
-}
+ }
 
 
-.project {
+ .project {
     display: inline-block;
-    margin-right: 1.5rem;
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
-    min-width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-wrap: break-word;
-    max-width: 950px;
-    
+    word-break: break-all;
+    max-width: 1100px;
+    margin-right: 1.5rem; /* Added margin for spacing between projects */
+    white-space: pre-line;
 }
 
 .tech-stack {
